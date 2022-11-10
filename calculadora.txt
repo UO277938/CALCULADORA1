@@ -1,0 +1,6 @@
+La calculadora es un grid layout, con mucnos botones  con el mismo estilo,
+si se quiere alguno diferente se utiliza el value. Los botones son 
+input botton onclick con un valor y se le pasa al java scrpt
+El panel de arriba es input text readonly.
+Castear las cosas a Number de js.
+Utilizar el Math.seno(x)

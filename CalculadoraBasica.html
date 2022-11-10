@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>SEW.CALCULADORABASICA</title>
+
+    <!-- Autor del documento -->
+    <meta name="author" content="Fernando Jose Gonzalez Sierra" />
+    <meta name="description" content="Calculadora Basica SEW" />
+    <meta name="keywords" content="Calculadora Basica" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+
+    <h1>Calculadora Básica</h1>
+    <form>
+        <input type="text" id="texto" value="" minlength="1" maxlength="8" readonly>
+
+        <input type="button" id="on/c" value="ON/C" onclick="calculadora.encender()">
+        <input type="button" id="ce" value="CE" onclick="calculadora.borrar()">
+        <input type="button" id="masmenos"value="+/-" onclick="calculadora.signo()">
+        <input type="button" id="raiz" value="√" onclick="calculadora.raiz()">
+        <input type="button" id="procentage" value="%" onclick="calculadora.porcentaje()">
+
+        <input type="button" id="siete" value="7" onclick="calculadora.digitos(7)">
+        <input type="button" id="ocho" value="8" onclick="calculadora.digitos(8)">
+        <input type="button" id="nueve" value="9" onclick="calculadora.digitos(9)">
+        <input type="button" id="multiplicacion"  value="*" onclick="calculadora.multiplicacion()">
+        <input type="button" id="dividir" value="/" onclick="calculadora.division()">
+
+        <input type="button" id="cuatro" value="4" onclick="calculadora.digitos(4)">
+        <input type="button" id="cinco" value="5" onclick="calculadora.digitos(5)">
+        <input type="button" id="seis" value="6" onclick="calculadora.digitos(6)">
+        <input type="button" id="menos" value="-" onclick="calculadora.resta()">
+        <input type="button" id="mrc" value="MRC" onclick="calculadora.mrc()">
+
+        <input type="button" id="uno" value="1" onclick="calculadora.digitos(1)">
+        <input type="button" id="dos" value="2" onclick="calculadora.digitos(2)">
+        <input type="button" id="tres" value="3" onclick="calculadora.digitos(3)">
+        <input type="button" id="mas" value="+" onclick="calculadora.suma()">
+        <input type="button" id="mMenos" value="M-" onclick="calculadora.mMenos()">
+
+        <input type="button" id="cero" value="0" onclick="calculadora.digitos(0)">
+        <input type="button" id="punto" value="." onclick="calculadora.punto()">
+        <input type="button" id="igual" value="=" onclick="calculadora.igual()">
+        
+        <input type="button" id="mMas" value="M+" onclick="calculadora.mMas()">
+    </form>
+    <footer>
+       
+    </footer>
+</body>
+
+</html>

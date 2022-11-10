@@ -1,0 +1,57 @@
+/*Fernando Jose Gonzalez Sierra UO277938*/
+
+body {
+    /*FFE0A3,7F7D78,FFFAF0,7F7052,CCC8C0 */
+    font-family: Verdana, Geneva, sans-serif;
+    background: #5500ff;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 3em);
+    grid-template-rows: repeat(6, 3em);
+    column-gap: 0.2em;
+}
+
+form input[type="text"] {
+    grid-column: 1/-1;
+    padding: 0.7em;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 1.2em;
+    color: white;
+}
+
+input[type="button"] {
+    padding: 0.7em;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+form input[value="+"] {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    height: 6.5em;
+    background-color: rgba(240, 50, 50, 0.75);
+    color: black;
+}
+
+form input[type="button"]:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+form input[value="+"]:hover{
+    background-color: rgba(200, 54, 54, 0.75);
+}
+
